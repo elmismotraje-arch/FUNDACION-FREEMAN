@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FUNDACION FREEMAN | Gracias por enviar tu solicitud</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <style>
+      :root {
+        --bg: #030712;
+        --panel: rgba(15, 23, 42, 0.88);
+        --gold: #d97706;
+        --gold-soft: #fef3c7;
+        --text: #f9fafb;
+        --muted: #c7d0db;
+        --border: rgba(255,255,255,0.08);
+      }
+
+      * { box-sizing: border-box; }
+
+      body {
+        margin: 0;
+        min-height: 100vh;
+        display: grid;
+        place-items: center;
+        background:
+          linear-gradient(180deg, rgba(3,7,18,0.9), rgba(3,7,18,0.95)),
+          url('./freeman inicio.jpeg') center/cover no-repeat;
+        font-family: 'Inter', sans-serif;
+        color: var(--text);
+      }
+
+      .card {
+        width: min(92%, 700px);
+        padding: 3rem 2rem;
+        border-radius: 24px;
+        background: var(--panel);
+        border: 1px solid var(--border);
+        text-align: center;
+        box-shadow: 0 25px 60px rgba(0,0,0,0.45);
+      }
+
+      .eyebrow {
+        letter-spacing: 0.2rem;
+        text-transform: uppercase;
+        color: var(--gold-soft);
+        font-size: 0.72rem;
+        font-weight: 700;
+        margin-bottom: 1rem;
+      }
+
+      h1 {
+        margin: 0 0 1rem;
+        font-family: 'Cormorant Garamond', serif;
+        font-size: clamp(2.9rem, 5vw, 4.4rem);
+        line-height: 0.9;
+      }
+
+      p {
+        color: var(--muted);
+        font-size: 1.05rem;
+        line-height: 1.8;
+      }
+
+      .actions {
+        margin-top: 2rem;
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+        flex-wrap: wrap;
+      }
+
+      .btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0.95rem 1.5rem;
+        border-radius: 12px;
+        text-decoration: none;
+        font-weight: 700;
+        transition: 0.25s ease;
+      }
+
+      .btn-primary {
+        background: linear-gradient(135deg, var(--gold), #b45309);
+        color: white;
+        box-shadow: 0 15px 28px rgba(217,119,6,0.25);
+      }
+
+      .btn-whatsapp {
+        background: #25D366;
+        color: white;
+      }
+
+      .btn:hover {
+        transform: translateY(-2px);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <div class="eyebrow">Fundación Freeman</div>
+      <h1>Gracias por enviar tu solicitud</h1>
+      <p>
+        Tu solicitud fue recibida correctamente. Nuestro equipo revisará tu caso y te responderá
+        de forma rápida y prioritaria para ayudarte de inmediato.
+      </p>
+      <div class="actions">
+        <a class="btn btn-whatsapp" href="https://wa.me/19295874216?text=Hola%2C%20ya%20mand%C3%A9%20mi%20solicitud%20a%20la%20Fundaci%C3%B3n%20Freeman.%20Necesito%20atenci%C3%B3n%20inmediata." target="_blank" rel="noreferrer">Hablar por WhatsApp</a>
+        <a class="btn btn-primary" href="index.html">Volver al inicio</a>
+      </div>
+    </div>
+  </body>
+</html>
